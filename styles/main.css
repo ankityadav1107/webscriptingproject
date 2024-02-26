@@ -1,0 +1,298 @@
+/* Baskervville */
+@import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap");
+/* Raleway */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+
+@import "navbar.css";
+@import "aboutus.css";
+@import "caraousel.css";
+@import "location.css";
+@import "order.css";
+@import "pricelist.css";
+@import "benefit.css";
+@import "gallery.css";
+@import "footer.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: 'Raleway', sans-serif; */
+  /* font-family: 'Baskervville', serif; */
+}
+
+.section-promo {
+  background-color: #f8f2dc;
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-promo .promo-content {
+  padding: 1em;
+  text-align: center;
+}
+
+.promo-content h1 {
+  font-family: "Baskervville", serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.on-top-btn {
+  position: fixed;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: #796c4a;
+  border: 1px solid #796c4a;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  margin: 0em 0.7em 1em 0em;
+  color: #fff;
+  font-size: 2.3rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.on-top-btn.scrolled {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ----------------------- RESPONSIVE --------------------- */
+/* Mobile */
+@media (max-width: 480px) {
+  html {
+    font-size: 65%;
+  }
+  .on-top-btn {
+    visibility: hidden;
+  }
+  .promo-content h1 {
+    font-size: 1.4rem;
+  }
+  .navbar {
+    padding: 0em 1em;
+  }
+
+  .navbar .navbar-brand img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .navbar .navbar-collapse {
+    padding: 1.4em 0em;
+  }
+
+  .navbar .nav-item .nav-link {
+    font-size: 1.7rem;
+  }
+
+  .navbar .navbar-toggler {
+    font-size: 2.1rem;
+  }
+
+  .nav-item span {
+    display: none;
+  }
+
+  .navbar .nav-item svg {
+    width: 45px;
+    height: 45px;
+  }
+
+  .section-aboutus .aboutus-content {
+    text-align: center;
+  }
+
+  .header-carousel {
+    font-size: 1.6rem;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 50px;
+    height: 50px;
+  }
+  .header-location img {
+    width: 50px;
+    height: 50px;
+  }
+  .date-location-desc {
+    line-height: 1.5;
+    text-align: center;
+  }
+  .section-order .order-content {
+    flex-wrap: wrap;
+  }
+  .header-order img {
+    width: 50px;
+    height: 50px;
+  }
+  .order-content .box {
+    width: 190px;
+    height: 300px;
+    justify-content: center;
+  }
+  .section-price-list {
+    padding: 5em 4em 10em 4em;
+  }
+  .section-price-list .header-price-list img {
+    width: 50px;
+    height: 50px;
+  }
+  .section-price-list .price-list-content {
+    flex-wrap: wrap-reverse;
+  }
+  .price-list-content .desc-product {
+    width: 100%;
+  }
+  .price-list-content img {
+    padding: 5em 0em;
+  }
+  .section-benefit {
+    flex-wrap: wrap;
+  }
+  .section-benefit .header-benefit {
+    justify-content: center;
+    padding-right: 0em;
+    gap: 0em;
+  }
+  .header-benefit h1 {
+    font-size: 3rem;
+  }
+  .section-benefit .header-benefit img {
+    width: 50px;
+    height: 50px;
+  }
+  .benefit-content .benefit-desc {
+    text-align: center;
+    line-height: 1.5;
+  }
+  .section-gallery .header-gallery img {
+    width: 50px;
+    height: 50px;
+  }
+  .footer-content {
+    flex-wrap: wrap;
+    padding: 4em;
+  }
+  .footer-content .brand-name {
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4em;
+  }
+  .footer-content .brand-name h3 {
+    text-align: center;
+  }
+  .footer-content .inner-footer-content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .inner-footer-content .footer-menu {
+    padding-bottom: 3em;
+  }
+
+  .inner-footer-content .footer-menu h3 {
+    text-align: center;
+  }
+  .inner-footer-content .footer-menu-content {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .inner-footer-content .footer-menu-content a {
+    font-size: 1.5rem;
+  }
+  .inner-footer-content .footer-contact-us h3 {
+    text-align: center;
+  }
+  .footer-contact-us img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 390px) {
+  .section-aboutus .aboutus-content {
+    padding: 5em 2em;
+  }
+  .section-aboutus .aboutus-content .header h1 {
+    font-size: 5rem;
+  }
+  .header-carousel {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .date-location .date-location-desc {
+    font-size: 1.4rem;
+  }
+}
+
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+  .promo-content h1 {
+    font-size: 1.5rem;
+  }
+  .navbar .nav-item .nav-link {
+    font-size: 1.4rem;
+  }
+  .nav-item svg {
+    width: 30px;
+    height: 30px;
+  }
+  .header-location img {
+    width: 60px;
+    height: 60px;
+  }
+  .header-order img {
+    width: 60px;
+    height: 60px;
+  }
+  .order-content .box {
+    width: 260px;
+    height: 370px;
+  }
+  .order-content .box p {
+    font-size: 1.5rem;
+  }
+  .header-price-list img {
+    width: 60px;
+    height: 60px;
+  }
+  .price-list-content .desc-product {
+    width: 100%;
+  }
+  .price-list-content .desc-product p {
+    font-size: 1.5rem;
+  }
+  .header-benefit h1 {
+    font-size: 3rem;
+  }
+  .header-benefit img {
+    width: 70px;
+    height: 70px;
+  }
+  .header-gallery img {
+    width: 60px;
+    height: 60px;
+  }
+  .footer-menu .footer-menu-content a {
+    font-size: 1.4rem;
+  }
+  .footer-contact-us img {
+    width: 60px;
+    height: 60px;
+  }
+}
