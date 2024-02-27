@@ -27,3 +27,13 @@
     padding: 1em 2em;
     font-weight: 500;
 }
+p:nth-child(even) {   
+              background: yellow;   
+              color: black;   
+             font-size:30px;  
+	            }   
+	            p:nth-child(odd) {   
+              background: blue;   
+	              color: white;   
+	              font-size:20px;  
+              }
