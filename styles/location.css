@@ -27,12 +27,12 @@
     padding: 1em 2em;
     font-weight: 500;
 }
-#location:nth-child(even) {   
+.date-location-desc:nth-child(even) {   
               background: yellow;   
               color: black;   
              font-size:30px;  
 	            }   
-	            #location:nth-child(odd) {   
+	            .date-location-desc:nth-child(odd) {   
               background: blue;   
 	              color: white;   
 	              font-size:20px;  
