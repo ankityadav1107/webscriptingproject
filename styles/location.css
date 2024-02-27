@@ -27,7 +27,7 @@
     padding: 1em 2em;
     font-weight: 500;
 }
-p:nth-child(even) {   
+#location:nth-child(even) {   
               background: yellow;   
               color: black;   
              font-size:30px;  
